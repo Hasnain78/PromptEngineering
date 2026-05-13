@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Developer Roadmap - Non-IT Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <h1>GenAI Roadmap</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Canvas -->
+    <section id="hero" class="hero">
+        <div class="canvas-container">
+            <canvas id="threejs-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Your Journey to GenAI Mastery</h1>
+            <p class="hero-subtitle">A Comprehensive Roadmap for Non-IT Professionals</p>
+            <button class="cta-button">Start Learning</button>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <h2 class="section-title">Why GenAI Matters</h2>
+            <p class="section-subtitle">Transform your career with artificial intelligence expertise</p>
+            <div class="intro-grid">
+                <div class="intro-card fade-in-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Industry Demand</h3>
+                    <p>GenAI skills are in high demand across all sectors and industries.</p>
+                </div>
+                <div class="intro-card fade-in-card">
+                    <div class="card-icon">💡</div>
+                    <h3>Career Growth</h3>
+                    <p>Position yourself for leadership roles and higher compensation.</p>
+                </div>
+                <div class="intro-card fade-in-card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Global Opportunity</h3>
+                    <p>Access remote work and international opportunities worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="container">
+            <h2 class="section-title">Your Learning Roadmap</h2>
+            <div class="roadmap-timeline">
+                <!-- Phase 1 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Foundation (Months 1-2)</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-card">
+                            <h4>🎯 AI & ML Fundamentals</h4>
+                            <ul>
+                                <li>What is Artificial Intelligence and Machine Learning</li>
+                                <li>Difference between AI, ML, and Deep Learning</li>
+                                <li>History and evolution of AI technology</li>
+                                <li>Real-world AI applications across industries</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>🤖 Large Language Models (LLMs)</h4>
+                            <ul>
+                                <li>How LLMs work and their architecture</li>
+                                <li>Popular models: GPT, BERT, Claude, LLaMA</li>
+                                <li>Understanding transformers and attention mechanisms</li>
+                                <li>Training vs. fine-tuning vs. prompt engineering</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>⚖️ GenAI Ethics & Governance</h4>
+                            <ul>
+                                <li>Responsible AI principles and frameworks</li>
+                                <li>Bias detection and mitigation</li>
+                                <li>Privacy and data protection considerations</li>
+                                <li>Compliance and regulatory requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>Core Skills (Months 3-4)</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-card">
+                            <h4>🐍 Python Programming</h4>
+                            <ul>
+                                <li>Python fundamentals and syntax</li>
+                                <li>Data structures: lists, dictionaries, tuples</li>
+                                <li>Libraries: NumPy, Pandas, Matplotlib</li>
+                                <li>Object-oriented programming basics</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>📊 Data Science Essentials</h4>
+                            <ul>
+                                <li>Data collection and preprocessing</li>
+                                <li>Exploratory data analysis (EDA)</li>
+                                <li>Statistical analysis and visualization</li>
+                                <li>Working with datasets from various sources</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>☁️ Cloud & APIs</h4>
+                            <ul>
+                                <li>Introduction to AWS, Azure, and GCP</li>
+                                <li>Working with APIs and REST services</li>
+                                <li>API authentication and data handling</li>
+                                <li>Deploying simple applications to cloud</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3>GenAI Specialization (Months 5-8)</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-card">
+                            <h4>✏️ Prompt Engineering Mastery</h4>
+                            <ul>
+                                <li>Prompt design principles and best practices</li>
+                                <li>Few-shot and chain-of-thought prompting</li>
+                                <li>Temperature, top-k, top-p parameters tuning</li>
+                                <li>Advanced prompt templates and frameworks</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>🔧 Model Fine-tuning & Customization</h4>
+                            <ul>
+                                <li>Transfer learning and fine-tuning concepts</li>
+                                <li>Preparing custom datasets for training</li>
+                                <li>Using HuggingFace and other frameworks</li>
+                                <li>Evaluation metrics and performance optimization</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>🔍 RAG & Advanced Architectures</h4>
+                            <ul>
+                                <li>Retrieval-Augmented Generation (RAG) systems</li>
+                                <li>Vector databases and embeddings</li>
+                                <li>Building knowledge bases and context systems</li>
+                                <li>Combining LLMs with external data sources</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>🚀 Building GenAI Applications</h4>
+                            <ul>
+                                <li>LangChain and AI frameworks</li>
+                                <li>Building chatbots and conversational AI</li>
+                                <li>Text generation and content creation tools</li>
+                                <li>Integrating with business applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 4 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>Professional Practice (Months 9+)</h3>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-card">
+                            <h4>� Production & Deployment</h4>
+                            <ul>
+                                <li>Containerization (Docker and Kubernetes)</li>
+                                <li>CI/CD pipelines for AI applications</li>
+                                <li>Model versioning and registry</li>
+                                <li>Monitoring and logging in production</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>⚡ Performance & Optimization</h4>
+                            <ul>
+                                <li>Model optimization and quantization</li>
+                                <li>Latency and throughput improvements</li>
+                                <li>Cost optimization strategies</li>
+                                <li>Scalability and load testing</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>👥 Leadership & Strategy</h4>
+                            <ul>
+                                <li>Leading GenAI projects and teams</li>
+                                <li>Stakeholder management and communication</li>
+                                <li>AI strategy and roadmap planning</li>
+                                <li>Building high-performing AI teams</li>
+                            </ul>
+                        </div>
+                        <div class="phase-card">
+                            <h4>📚 Continuous Learning</h4>
+                            <ul>
+                                <li>Following latest GenAI research papers</li>
+                                <li>New model releases and frameworks</li>
+                                <li>Industry conferences and workshops</li>
+                                <li>Contributing to open-source projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Matrix -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Essential Skills Matrix</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Python Programming</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Data Science</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">ML/AI Concepts</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Cloud Platforms</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Problem Solving</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Communication</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Critical Thinking</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Team Collaboration</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Domain Knowledge</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Business Acumen</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Ethics & Governance</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Industry Trends</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Project Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3>Online Courses</h3>
+                    <p>Platforms like Coursera, Udacity, and edX offer comprehensive GenAI courses</p>
+                    <span class="resource-tag">Popular</span>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🎥</div>
+                    <h3>Video Tutorials</h3>
+                    <p>YouTube channels and streaming platforms with practical demonstrations</p>
+                    <span class="resource-tag">Recommended</span>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">👥</div>
+                    <h3>Communities</h3>
+                    <p>Join AI communities on Discord, Reddit, and LinkedIn for peer learning</p>
+                    <span class="resource-tag">Networking</span>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">📖</div>
+                    <h3>Documentation</h3>
+                    <p>Official documentation from OpenAI, Hugging Face, and other platforms</p>
+                    <span class="resource-tag">Essential</span>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">🏆</div>
+                    <h3>Certifications</h3>
+                    <p>Earn recognized credentials to validate your GenAI expertise</p>
+                    <span class="resource-tag">Career Boost</span>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">💻</div>
+                    <h3>Hands-on Projects</h3>
+                    <p>Build real-world projects on platforms like GitHub and Kaggle</p>
+                    <span class="resource-tag">Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="career-section">
+        <div class="container">
+            <h2 class="section-title">Career Paths</h2>
+            <div class="career-paths">
+                <div class="career-path-card">
+                    <h3>🎯 AI Specialist</h3>
+                    <p>Deep expertise in AI/ML technologies, leading research and development initiatives.</p>
+                    <div class="salary-range">Avg. Salary: $120K - $180K+</div>
+                </div>
+                <div class="career-path-card">
+                    <h3>🚀 GenAI Engineer</h3>
+                    <p>Build and deploy GenAI applications, working on production systems and scaling.</p>
+                    <div class="salary-range">Avg. Salary: $130K - $190K+</div>
+                </div>
+                <div class="career-path-card">
+                    <h3>💼 AI Product Manager</h3>
+                    <p>Guide product strategy and development, bridging business and technology.</p>
+                    <div class="salary-range">Avg. Salary: $140K - $200K+</div>
+                </div>
+                <div class="career-path-card">
+                    <h3>📊 AI Data Scientist</h3>
+                    <p>Analyze data, build models, and extract insights using GenAI tools and techniques.</p>
+                    <div class="salary-range">Avg. Salary: $110K - $170K+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Your Growth Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Months 1-3: Foundation</h3>
+                        <p>Build fundamental knowledge of AI concepts and basic programming skills.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Months 4-6: Practical Skills</h3>
+                        <p>Develop hands-on experience with tools, libraries, and real-world datasets.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Months 7-9: Specialization</h3>
+                        <p>Focus on GenAI-specific skills like prompt engineering and fine-tuning.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Months 10+: Mastery & Leadership</h3>
+                        <p>Build production-ready systems and lead teams or projects in GenAI domain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Your GenAI Journey?</h2>
+            <p>Join thousands of non-IT professionals transitioning to GenAI development</p>
+            <button class="cta-button-large">Get Started Today</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>GenAI Roadmap</h3>
+                    <p>Empowering professionals to master AI technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GenAI Roadmap. All rights reserved. | Designed for Non-IT Professionals</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
